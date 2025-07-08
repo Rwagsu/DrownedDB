@@ -31,6 +31,18 @@ export default defineConfig({
 		starlight({
 			title: 'DrownedDB',
 
+			// Localization
+			defaultLocale: 'zh',
+      		locales: {
+        		// 英文文档在 `src/content/docs/en/` 中。
+        		en: {
+        		  label: 'English',
+       			 },
+        		zh: {
+          		label: '中文 (简体)',
+        		},
+      		},
+
 			// Plugins
 			plugins: [
 				starlightThemeNova(),
@@ -55,18 +67,6 @@ export default defineConfig({
         		'./src/styles/main.css',
       		],
 
-			// Localization
-			defaultLocale: 'zh-CN',
-			locales: {
-				'zh-CN': {
-					label: '中文 (简体)',
-					
-				},
-				'en-US': {
-					label: 'English (US)'
-				}
-			},
-
 			// Links
 			social: [
 				{ icon: 'github', label: 'GitHub', href: 'https://github.com/Rwagsu' },
@@ -77,6 +77,19 @@ export default defineConfig({
 			editLink: {
         		baseUrl: 'https://github.com/withastro/starlight/edit/main/docs/',
       		},
+
+			// Is LastUpdate enabled
+			lastUpdated: true,
+
+			// TODO: favicon
+
+			// Title Delimiter
+			titleDelimiter: '<',
+
+			// TODO: DIsable Default 404
+
+			// Credits
+			credits: true,
 		}),
 	],
 });
