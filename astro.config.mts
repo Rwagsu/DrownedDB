@@ -20,7 +20,8 @@ import starlightCoolerCredit from 'starlight-cooler-credit'
 import starlightGiscus from 'starlight-giscus'
 // Blog
 import starlightBlog from 'starlight-blog'
-
+// Sidebar topics
+import starlightSidebarTopics from 'starlight-sidebar-topics'
 
 // Links Validator
 import starlightLinksValidator from 'starlight-links-validator'
@@ -61,7 +62,46 @@ export default defineConfig({
 					lazy: true,
 				}),
 				starlightBlog(),
+				starlightSidebarTopics([
+          			{
+            			label: 'Guides',
+            			link: '/guides/',
+            			icon: 'open-book',
+            			items: ['guides/example'],
+          			},
+					{
+            			label: 'Exaaa',
+            			link: '/guides/exaa/',
+            			icon: 'open-book',
+            			items: ['guides/exaa/exa'],
+          			},
+          			{
+            			label: 'Reference',
+            			link: '/reference/',
+            			icon: 'information',
+            			items: ['reference/example'],
+          			},
+					{
+            			label: 'Collections',
+						id: 'collections',
+            			link: '/collections/',
+            			icon: 'information',
+            			items: ['collections/a', 'collections/b'],
+          			},
+        		],
+				{
+					topics: {
+              			// Associate custom pages with the "Guides" topic.
+              			collections: ['/zh/collections', '/*/collections/**'],
+            		}, 
+				}),
 			], 
+
+			// Override Components
+			components: {
+				Sidebar: './src/components/Sidebar.astro'
+			},
+
 			// Css
 			customCss: [
         		'./src/styles/main.css',
