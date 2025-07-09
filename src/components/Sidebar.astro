@@ -1,14 +1,14 @@
 ---
 import Default from '@astrojs/starlight/components/Sidebar.astro';
 import TopicsDropdown from 'starlight-sidebar-topics-dropdown/TopicsDropdown.astro';
-import MobileMenuFooter from '@astrojs/starlight/components/MobileMenuFooter.astro';
-import SidebarPersister from '@astrojs/starlight/components/SidebarPersister.astro';
 
-const isCollection = Astro.locals.starlightRoute.id.includes("/collections");
+const isBlog = Astro.locals.starlightRoute.id.includes("blog");
+console.log(isBlog)
+console.log(Astro.locals.starlightRoute.id)
 ---
 
 {
-    isCollection ? (
+    isBlog ? (
         <Default><slot /></Default>
     ) : (
         <TopicsDropdown />

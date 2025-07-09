@@ -31,22 +31,44 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'DrownedDB',
+			description: 'test',
 
 			// Localization
-			defaultLocale: 'zh',
+			defaultLocale: 'root',
       		locales: {
-        		// 英文文档在 `src/content/docs/en/` 中。
+				root: {
+          			label: '中文 (简体)',
+					lang: 'zh-CN',
+        		},
+
         		en: {
         		  label: 'English',
        			 },
-        		zh: {
-          		label: '中文 (简体)',
-        		},
+        		
       		},
 
 			// Plugins
 			plugins: [
-				starlightThemeNova(),
+				starlightThemeNova({
+					nav: [
+						{
+							label: 'Docs',
+							href: '/DrownedDB/docs'
+						},
+						{
+							label: 'Blogs',
+							href: '/DrownedDB/blog'
+						},
+						{
+							label: "Rwagsu's portfolio",
+							href: '/DrownedDB/collections'
+						},
+						{
+							label: "Resources",
+							href: '/DrownedDB/resources'
+						}
+					]
+				}),
 				starlightScrollToTop(),
 				starlightAutoSidebar(),
 				starlightVideos(),
@@ -54,52 +76,97 @@ export default defineConfig({
 				starlightHeadingBadges(),
 				starlightCoolerCredit(),
 				starlightGiscus({
-					repo: 'https://github.com/Rwagsu/DrownedDB',
+					repo: 'Rwagsu/DrownedDB',
 					repoId: 'R_kgDOPCVQEQ',
 					category: 'Comments',
 					categoryId: 'DIC_kwDOPCVQEc4CsmMo',
 					inputPosition: 'top',
 					lazy: true,
 				}),
-				starlightBlog(),
+
+				// Blog
+				starlightBlog({
+					authors: {
+                        rwagsu: {
+                    		name: 'Rwagsu',
+                            title: 'OwO',
+                            picture: 'https://avatars.githubusercontent.com/u/84891987?v=4',
+                            url: 'https://rwagsu.github.io/DrownedDB/',
+                        },
+                    },
+					metrics: {
+    					readingTime: true,
+   				 		words: 'total',
+  					},
+				}),
+
+				// Sidebar Topics
 				starlightSidebarTopics([
+					// Docs
           			{
-            			label: 'Guides',
-            			link: '/guides/',
-            			icon: 'open-book',
-            			items: ['guides/example'],
+            			label: 'Blender',
+            			link: '/docs/blender/',
+            			icon: 'pkl',
+            			items: [
+							{
+     							label: 'Blender',
+      							autogenerate: { directory: '/docs/blender/' },
+   							},
+						],
           			},
+
+					// Other
 					{
-            			label: 'Exaaa',
-            			link: '/guides/exaa/',
-            			icon: 'open-book',
-            			items: ['guides/exaa/exa'],
-          			},
-          			{
-            			label: 'Reference',
-            			link: '/reference/',
-            			icon: 'information',
-            			items: ['reference/example'],
-          			},
-					{
-            			label: 'Collections',
+            			label: {
+							'zh-CN': 'Rwagsu 的作品集',
+							en: "Rwagsu's portfolio"
+						},
 						id: 'collections',
             			link: '/collections/',
-            			icon: 'information',
-            			items: ['collections/a', 'collections/b'],
+            			icon: 'seti:plan',
+            			items: [
+							{
+     							label: 'Collections',
+      							autogenerate: { directory: '/collections/' },
+   							},
+						],
+						
           			},
-        		],
-				{
-					topics: {
-              			// Associate custom pages with the "Guides" topic.
-              			collections: ['/zh/collections', '/*/collections/**'],
-            		}, 
+					{
+            			label: 'Blogs',
+            			link: '/blog/',
+            			icon: 'comment',
+            			items: [
+							{
+     							label: 'Blogs',
+      							autogenerate: { directory: '/blog/' },
+   							},
+						],
+						
+          			},
+					{
+            			label: {
+							'zh-CN': '资源',
+							en: "Resources"
+						},
+            			link: '/resources/',
+            			icon: 'rocket',
+            			items: [
+							{
+     							label: 'Resources',
+      							autogenerate: { directory: '/resources/' },
+   							},
+						],
+          			}
+        		], {
+					exclude: ['/blog', '/blog/**/*', '/*/blog', '/*/blog/**/*'],
 				}),
 			], 
 
 			// Override Components
 			components: {
-				Sidebar: './src/components/Sidebar.astro'
+				Sidebar: './src/components/Sidebar.astro',
+				Pagination: './src/components/Pagination.astro',
 			},
 
 			// Css
@@ -111,6 +178,7 @@ export default defineConfig({
 			social: [
 				{ icon: 'github', label: 'GitHub', href: 'https://github.com/Rwagsu' },
 				{ icon: 'youtube', label: 'Bilibili', href: 'https://space.bilibili.com/2123349162' }
+
 			],
 
 			// EditLink
@@ -132,4 +200,6 @@ export default defineConfig({
 			credits: true,
 		}),
 	],
+	site: 'https://rwagsu.github.io',
+	base: '/DrownedDB'
 });

@@ -1,0 +1,14 @@
+---
+import Default from 'starlight-theme-nova/components/Pagination.astro'
+import Comments from 'starlight-giscus/components/Comments.astro';
+
+const isDocs = Astro.locals.starlightRoute.entry.data.template === 'doc';
+---
+{
+    isDocs ? (
+        <Default><slot /></Default>
+        <Comments />
+    ) : (
+        <Default><slot /></Default>
+    )
+}
