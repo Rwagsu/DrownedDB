@@ -10,7 +10,7 @@ authors:
 以前遇到过, 正好今天搞博客, 记录下()
 
 :::caution
-该设置仅适用于解锁 BootLoader 设备.
+该设置仅适用于已解锁 BootLoader 设备.
 :::
 
 ## 症状
