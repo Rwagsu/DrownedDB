@@ -9,7 +9,7 @@ authors:
 ---
 已经确定会进行的项目包括:
 ## 有动静
-- Krita 板绘: 进度最快! 我爱 ~~Furryy~~ 板绘!
+- Krita 板绘: 进度最快! 我爱 ~~Furry~~ 板绘!
 - Blender 动画: 进度比 Krita 板绘稍慢, 但仍旧很快!
 - Godot: 第三快, 名字待定 ()
 - [BadMC Launcher](https://github.com/BadBC-Studio/BadMC_Launcher): 活跃状态, 已知千年老 Bug 已经解决, 未来还会继续更新.
