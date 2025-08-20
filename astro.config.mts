@@ -52,20 +52,38 @@ export default defineConfig({
 				starlightThemeNova({
 					nav: [
 						{
-							label: 'Docs',
-							href: '/DrownedDB/docs'
+							label: {
+								root: '文档',
+								en: 'Docs'
+							},
+							href: {
+								root: '/DrownedDB/docs',
+								en: '/DrownedDB/en/docs'
+							}
 						},
 						{
 							label: 'Blogs',
 							href: '/DrownedDB/blog'
 						},
 						{
-							label: "Rwagsu's portfolio",
-							href: '/DrownedDB/collections'
+							label: {
+								root: 'Rwagsu 的作品集',
+								en: "Rwagsu's portfolio"
+							},
+							href: {
+								root: '/DrownedDB/collections',
+								en: '/DrownedDB/en/collections'
+							}
 						},
 						{
-							label: "Resources",
-							href: '/DrownedDB/resources'
+							label: {
+								root: '资源',
+								en: 'Resources'
+							},
+							href: {
+								root: '/DrownedDB/resources',
+								en: '/DrownedDB/en/resources'
+							}
 						}
 					]
 				}),
