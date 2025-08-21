@@ -14,7 +14,7 @@ authors:
 - Godot: 第三快, 名字待定 ()
 - [BadMC Launcher](https://github.com/BadBC-Studio/BadMC_Launcher): 活跃状态, 已知千年老 Bug 已经解决, 未来还会继续更新.
 - LMMS 编曲: 由于在 Windows 只是作为替代品, 比 BadMC Launcher 慢, 受到某个曲子的激励, 进度开始加快.
-- [DrownedDB](https://github.com/Rwagsu/DrownedDB): ......至少在 [PR](https://github.com/ocavue/starlight-theme-nova/pull/89) 合并之前或板绘学好之前不会有大动作了()
+- [RwagsuOwO](https://github.com/Rwagsu/RwagsuOwO): ......至少在 [PR](https://github.com/ocavue/starlight-theme-nova/pull/89) 合并之前或板绘学好之前不会有大动作了()
   别想太多, 到时候我要把这里整的超超超超超超超酷的! (除了 CSS 😡)
 
 ## 没动静

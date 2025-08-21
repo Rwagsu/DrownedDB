@@ -30,7 +30,7 @@ import starlightLinksValidator from 'starlight-links-validator'
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'DrownedDB',
+			title: 'RwagsuOwO',
 			description: 'test',
 
 			// Localization
@@ -57,13 +57,13 @@ export default defineConfig({
 								en: 'Docs'
 							},
 							href: {
-								root: '/DrownedDB/docs',
-								en: '/DrownedDB/en/docs'
+								root: '/RwagsuOwO/docs',
+								en: '/RwagsuOwO/en/docs'
 							}
 						},
 						{
 							label: 'Blogs',
-							href: '/DrownedDB/blog'
+							href: '/RwagsuOwO/blog'
 						},
 						{
 							label: {
@@ -71,8 +71,8 @@ export default defineConfig({
 								en: "Rwagsu's portfolio"
 							},
 							href: {
-								root: '/DrownedDB/collections',
-								en: '/DrownedDB/en/collections'
+								root: '/RwagsuOwO/collections',
+								en: '/RwagsuOwO/en/collections'
 							}
 						},
 						{
@@ -81,8 +81,8 @@ export default defineConfig({
 								en: 'Resources'
 							},
 							href: {
-								root: '/DrownedDB/resources',
-								en: '/DrownedDB/en/resources'
+								root: '/RwagsuOwO/resources',
+								en: '/RwagsuOwO/en/resources'
 							}
 						}
 					]
@@ -94,7 +94,7 @@ export default defineConfig({
 				starlightHeadingBadges(),
 				starlightCoolerCredit(),
 				starlightGiscus({
-					repo: 'Rwagsu/DrownedDB',
+					repo: 'Rwagsu/RwagsuOwO',
 					repoId: 'R_kgDOPCVQEQ',
 					category: 'Comments',
 					categoryId: 'DIC_kwDOPCVQEc4CsmMo',
@@ -109,7 +109,7 @@ export default defineConfig({
                     		name: 'Rwagsu',
                             title: 'OwO',
                             picture: 'https://avatars.githubusercontent.com/u/84891987?v=4',
-                            url: 'https://rwagsu.github.io/DrownedDB/',
+                            url: 'https://rwagsu.github.io/RwagsuOwO/',
                         },
                     },
 					metrics: {
@@ -219,5 +219,5 @@ export default defineConfig({
 		}),
 	],
 	site: 'https://rwagsu.github.io',
-	base: '/DrownedDB'
+	base: '/RwagsuOwO'
 });
