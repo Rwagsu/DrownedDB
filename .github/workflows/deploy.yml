@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   # Branch Name
   push:
-    branches: [ main ]
+    branches: [ Starlight ]
   # 允许你在 GitHub 上的 Actions 标签中手动触发此“工作流程”
   workflow_dispatch:
 
