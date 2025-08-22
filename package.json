@@ -1,0 +1,21 @@
+{
+  "name": "RwagsuOwO",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "keywords": [],
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "@chunge16/vitepress-blogs-theme": "^0.2.4",
+    "vitepress": "2.0.0-alpha.12",
+    "vitepress-plugin-nprogress": "^0.1.0"
+  },
+  "dependencies": {
+    "viewerjs": "^1.11.7",
+    "vitepress-plugin-image-viewer": "^1.1.6"
+  }
+}
