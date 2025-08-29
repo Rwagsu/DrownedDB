@@ -10,6 +10,7 @@
         "postinstall": "nuxt prepare"
     },
     "dependencies": {
+        "@giscus/vue": "^3.1.1",
         "nuxt": "^3.17.6",
         "shadcn-docs-nuxt": "^1.1.1",
         "vue": "^3.5.17",
