@@ -10,30 +10,6 @@ on:
       - shadcn-docs
 
 jobs:
-  build:
-    strategy:
-      fail-fast: false
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          run_install: false
-          version: 10
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: lts/*
-          cache: pnpm
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: Build
-        run: pnpm run build
-
   generate:
     strategy:
       fail-fast: false
@@ -57,9 +33,14 @@ jobs:
 
       - name: Generate
         run: pnpm run generate
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3 # 或 v2
+        with:
+          path: .output/public
         
   deploy:
-    needs: build
+    needs: generate
     runs-on: ubuntu-latest
     permissions:
       contents: 'read'
