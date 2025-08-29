@@ -10,9 +10,7 @@ icon: lucide:info
 
 ## Features
 
-- Free and [open source](https://github.com/ZTL-UwU/shadcn-docs-nuxt).
-- Fully [customizable](/api/configuration).
-- Rich [components](/components/prose) to work with.
+
 - Mobile support.
 - Indexed searching powered by Nuxt Content.
 - Partial component compatibility with `Docus`, `Nuxt UI Pro Docs`, `undocs`.
