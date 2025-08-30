@@ -4,7 +4,7 @@ export default defineAppConfig({
         site: {
             name: 'RwagsuOwO',
             description: "Rwagsu's Docs & Blogs!",
-            url: 'https://rwagsu.github.io/RwagsuOwO',
+            url: 'https://rwagsu.github.io/RwagsuOwO/',
             // ogImage (TODO)
 
             // umami
@@ -163,7 +163,7 @@ export default defineAppConfig({
             // Edit link
             editLink: {
                 enable: true,
-                pattern: 'https://github.com/ZTL-UwU/shadcn-docs-nuxt/edit/main/content/:path',
+                pattern: 'https://github.com/Rwagsu/RwagsuOwO/tree/shadcn-docs/content/:path',
                 text: 'Edit this page on GitHub',
                 icon: 'lucide:square-pen',
                 placement: ['docsFooter', 'toc'],

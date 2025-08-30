@@ -1,6 +1,6 @@
 export default defineI18nConfig(() => ({
     legacy: false,
-    locale: 'en',
+    locale: 'zh',
     fallbackLocale: 'en',
     messages: {
         zh: {

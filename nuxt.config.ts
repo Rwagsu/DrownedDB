@@ -2,6 +2,9 @@
 export default defineNuxtConfig({
     devtools: { enabled: true },
     extends: ['shadcn-docs-nuxt'],
+    app: {
+        baseURL: '/RwagsuOwO/',
+    },
     fonts: {
         providers: {
             google: false,
@@ -25,5 +28,5 @@ export default defineNuxtConfig({
             }
         ],
     },
-    compatibilityDate: '2024-07-06',
+    compatibilityDate: '2025-08-30',
 });
