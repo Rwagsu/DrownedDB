@@ -2,6 +2,11 @@
 export default defineNuxtConfig({
     devtools: { enabled: true },
     extends: ['shadcn-docs-nuxt'],
+    content: {
+        highlight: {
+            langs: ['csharp', 'xml', 'kotlin', 'groovy', 'kts', 'java', 'log', 'rust', 'properties', 'toml'],
+        },
+    },
     app: {
         baseURL: '/RwagsuOwO/',
     },

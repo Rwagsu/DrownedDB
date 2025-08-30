@@ -61,7 +61,10 @@ export default defineI18nConfig(() => ({
             'On this page': '在本页中',
             'Create Issue': '创建 Issue',
             "BadBC's GitHub": 'BadBC 的 GitHub',
-            'Back to Top': '回到顶部'
+            'Back to Top': '回到顶部',
+
+            // Markdown
+            'Read more at': '在这里阅读更多: ',
         },
         en: {
             'RwagsuOwO': 'RwagsuOwO',
@@ -122,6 +125,9 @@ export default defineI18nConfig(() => ({
             'Create Issue': 'Create Issue',
             "BadBC's GitHub": "BadBC's GitHub",
             'Back to Top': 'Back to Top',
+
+            // Markdown
+            'Read more at': 'Read more at',
         },
     },
 }))
